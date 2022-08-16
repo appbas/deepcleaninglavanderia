@@ -1,0 +1,20 @@
+@import "../../../assets/scss/variables";
+
+
+.brand {
+  width: 8rem;
+  height: 3rem;
+  background-image: url('../../../assets/imgs/logo_dc.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.imagem-indicacao {
+  width: 100%;
+  max-width: 72px;
+}
+
+section[id="zap"] {
+  color: #FFF;
+  background-color: $dcl-primary;
+}
