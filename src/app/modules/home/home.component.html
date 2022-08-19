@@ -3,7 +3,10 @@
   data-bs-target="#navbar-dc"
   data-bs-smooth-scroll="true"
 >
-  <nav class="navbar navbar-expand-lg navbar-light mb-3" id="navbar-dc">
+  <nav
+    class="navbar navbar-expand-lg navbar-light mb-3 shadow-sm"
+    id="navbar-dc"
+  >
     <div class="container">
       <a class="navbar-brand brand" href="assets/imgs/logo_dc.png"> </a>
       <button
@@ -15,7 +18,7 @@
         <span class="navbar-toggler-icon text-primary"></span>
       </button>
       <div class="navbar-collapse collapse">
-        <ul class="navbar-nav flex-grow-1">
+        <ul class="navbar-nav flex-grow-1 justify-content-center">
           <li class="nav-item">
             <a class="nav-link text-primary" href="#servicos">Serviços</a>
           </li>
@@ -26,7 +29,7 @@
           </li>
         </ul>
 
-        <div class="align-self-end">
+        <div class="align-self-end" *ngIf="false">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a
@@ -76,23 +79,23 @@
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" data-bs-interval="8000">
             <img
-              src="https://images.ctfassets.net/0gqf8nju6pz6/6fSTjjfEBSFALDqMQbNQDX/a583e4e3b700ece16f7b3e84ab256436/deep-cleaning-list-hero.jpg"
+              src="assets/imgs/dcl_banner_0001.png"
               class="d-block w-100"
               alt="..."
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="8000">
             <img
-              src="https://res.cloudinary.com/taskrabbit-com/image/upload/f_auto,q_auto/reik0t6tv0dgnf2xgei3"
+              src="assets/imgs/dcl_banner_0002.png"
               class="d-block w-100"
               alt="..."
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="8000">
             <img
-              src="https://images.ctfassets.net/0gqf8nju6pz6/6fSTjjfEBSFALDqMQbNQDX/a583e4e3b700ece16f7b3e84ab256436/deep-cleaning-list-hero.jpg"
+              src="assets/imgs/dcl_banner_0003.png"
               class="d-block w-100"
               alt="..."
             />
@@ -121,12 +124,12 @@
   </header>
 
   <div class="container">
-    <main id="servicos">
+    <main>
       <section id="zap">
         <app-contato></app-contato>
       </section>
 
-      <section class="bg-primary bg-success bg-opacity-10 p-3">
+      <section id="servicos" class="bg-primary bg-success bg-opacity-10 p-3">
         <div class="d-flex justify-content-center">
           <p class="fs-1 fw-semibold text-uppercase text-primary">
             Nossos serviços são indicados
@@ -268,4 +271,48 @@
   </div>
 </div>
 
-<footer></footer>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div
+          class="d-flex flex-column justify-content-md-end align-items-center justify-content-center"
+        >
+          <div class="footer-brand rounded">
+            <img class="brand" src="assets/imgs/logo_dc.png" />
+          </div>
+          <div>
+            <small> 37.454.975/0001-08 </small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="d-flex flex-column">
+          <a href="#">Política de privacidade</a>
+          <a href="#">Termos de uso</a>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="d-flex justify-content-center">
+          <a
+            class="m-1"
+            href="https://api.whatsapp.com/send?phone=5561999172107"
+            target="_blank"
+          >
+            <img src="assets/imgs/whatsapp.svg" />
+          </a>
+          <a
+            class="m-1"
+            href="https://www.instagram.com/deepcleaning.lavanderia/"
+            target="_blank"
+          >
+            <img src="assets/imgs/instagram_128.png" height="48" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex align-items-center justify-content-center">
+    <small class="text-muted p-1"> Desenvolvido por Bruno </small>
+  </div>
+</footer>
